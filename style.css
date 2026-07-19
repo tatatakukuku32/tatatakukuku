@@ -10,3 +10,51 @@ body:after{content:'';position:fixed;inset:0;pointer-events:none;z-index:4;backg
 .menu h1{color:#eee;font-size:46px;font-weight:300}.menu .sub{color:#a7bca6;margin:8px 0 18px}
 .menu nav a{display:block;color:#ddd;text-decoration:none;padding:8px 0}.menu nav a:hover{color:#b9e9b8;transform:translateX(8px)}
 @keyframes g1{0%{transform:translateX(-5%)}50%{transform:translateX(5%)}100%{transform:translateX(-5%)}}@keyframes g2{0%{transform:translateX(8%)}50%{transform:translateX(-6%)}100%{transform:translateX(8%)}}@keyframes f{from{opacity:.32}to{opacity:.42}}
+/* ==========================
+   Lantern Glow
+========================== */
+
+.lantern-glow{
+    position:fixed;
+    width:220px;
+    height:220px;
+
+    /* 위치는 나중에 맞춘다 */
+    left:73%;
+    top:38%;
+
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+
+    background:
+        radial-gradient(circle,
+        rgba(255,220,140,.55) 0%,
+        rgba(255,180,70,.28) 35%,
+        rgba(255,150,40,.10) 60%,
+        transparent 75%);
+
+    filter:blur(12px);
+
+    animation:lantern 4s ease-in-out infinite;
+
+    z-index:1;
+}
+
+@keyframes lantern{
+
+    0%{
+        opacity:.55;
+        transform:translate(-50%,-50%) scale(.96);
+    }
+
+    50%{
+        opacity:.9;
+        transform:translate(-50%,-50%) scale(1.05);
+    }
+
+    100%{
+        opacity:.55;
+        transform:translate(-50%,-50%) scale(.96);
+    }
+
+}
