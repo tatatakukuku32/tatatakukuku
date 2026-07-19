@@ -1,0 +1,9 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;font-family:Malgun Gothic,sans-serif}
+.background{position:fixed;inset:0;background:url("images/imagesshrine.png") center/cover no-repeat;filter:brightness(.45)}
+#rain{position:fixed;inset:0;pointer-events:none}
+.menu{position:absolute;left:80px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);padding:28px;border:1px solid rgba(255,255,255,.15)}
+h1{color:#eee;font-weight:300;font-size:46px;margin-bottom:10px}
+.sub{color:#9fb19f;margin-bottom:22px}
+nav a{display:block;color:#ddd;text-decoration:none;padding:8px 0}
+nav a:hover{color:#9fdf9f}
