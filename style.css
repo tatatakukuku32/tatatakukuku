@@ -1,0 +1,12 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:Malgun Gothic,sans-serif}
+.background{position:fixed;inset:0;background:url('images/imagesshrine.png') center/cover no-repeat;filter:brightness(.42) saturate(.8)}
+#rain{position:fixed;inset:0;z-index:2;pointer-events:none}
+body:before{content:'';position:fixed;inset:0;pointer-events:none;z-index:3;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.02)0 1px,transparent 2px 4px);opacity:.35;animation:f .18s infinite alternate}
+body:after{content:'';position:fixed;inset:0;pointer-events:none;z-index:4;background:radial-gradient(circle,transparent 55%,rgba(0,0,0,.45))}
+.fog,.fog2{position:fixed;left:-20%;width:140%;height:220px;background:#bfcbbf;filter:blur(45px);opacity:.16;z-index:1}
+.fog{bottom:0;animation:g1 35s linear infinite}.fog2{bottom:120px;animation:g2 50s linear infinite}
+.menu{position:absolute;left:70px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);padding:28px 36px;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(5px);z-index:5}
+.menu h1{color:#eee;font-size:46px;font-weight:300}.menu .sub{color:#a7bca6;margin:8px 0 18px}
+.menu nav a{display:block;color:#ddd;text-decoration:none;padding:8px 0}.menu nav a:hover{color:#b9e9b8;transform:translateX(8px)}
+@keyframes g1{0%{transform:translateX(-5%)}50%{transform:translateX(5%)}100%{transform:translateX(-5%)}}@keyframes g2{0%{transform:translateX(8%)}50%{transform:translateX(-6%)}100%{transform:translateX(8%)}}@keyframes f{from{opacity:.32}to{opacity:.42}}

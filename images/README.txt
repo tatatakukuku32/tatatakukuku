@@ -1,0 +1,1 @@
+여기에 imagesshrine.png를 넣으세요.
