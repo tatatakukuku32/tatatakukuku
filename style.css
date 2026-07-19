@@ -14,30 +14,28 @@ body:after{content:'';position:fixed;inset:0;pointer-events:none;z-index:4;backg
    Lantern Glow
 ========================== */
 
-.lantern-glow{
+lantern-glow{
     position:fixed;
-    width:220px;
-    height:220px;
+    width:320px;
+    height:320px;
 
-    /* 위치는 나중에 맞춘다 */
-    left:73%;
-    top:38%;
+    left:77%;
+    top:58%;
 
     transform:translate(-50%,-50%);
     pointer-events:none;
 
-    background:
-        radial-gradient(circle,
-        rgba(255,220,140,.55) 0%,
-        rgba(255,180,70,.28) 35%,
-        rgba(255,150,40,.10) 60%,
+    background:radial-gradient(circle,
+        rgba(255,235,170,.95) 0%,
+        rgba(255,180,80,.6) 25%,
+        rgba(255,140,40,.25) 55%,
         transparent 75%);
 
-    filter:blur(12px);
+    filter:blur(35px);
 
-    animation:lantern 4s ease-in-out infinite;
+    z-index:2;   /* ← 중요 */
 
-    z-index:1;
+    animation:lantern 3.5s ease-in-out infinite;
 }
 
 @keyframes lantern{
