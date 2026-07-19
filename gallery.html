@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery</title>
+
+<style>
+body{
+    margin:0;
+    background:#07111d;
+    color:white;
+    font-family:Malgun Gothic;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+    font-size:40px;
+}
+
+.gallery{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.04);
+
+}
+
+#viewer{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#viewer img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+🎨 Gallery
+
+</header>
+
+<div class="gallery">
+
+<img src="gallery/1.jpg">
+<img src="gallery/2.jpg">
+<img src="gallery/3.jpg">
+<img src="gallery/4.jpg">
+<img src="gallery/5.jpg">
+<img src="gallery/6.jpg">
+
+</div>
+
+<div id="viewer">
+
+<img id="big">
+
+</div>
+
+<script>
+
+const imgs=document.querySelectorAll(".gallery img");
+
+const viewer=document.getElementById("viewer");
+
+const big=document.getElementById("big");
+
+imgs.forEach(img=>{
+
+img.onclick=()=>{
+
+viewer.style.display="flex";
+
+big.src=img.src;
+
+}
+
+});
+
+viewer.onclick=()=>{
+
+viewer.style.display="none";
+
+}
+
+</script>
+
+</body>
+
+</html>
