@@ -9,7 +9,8 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:"Malgun Gothic",san
 .fog2{bottom:120px;opacity:.45;animation-duration:60s;}
 @keyframes fog{from{transform:translateX(-8%);}to{transform:translateX(8%);}}
 .crt{position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.15;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.03) 0 2px,transparent 2px 5px);}
-.menu{position:absolute;left:60px;bottom:60px;width:290px;padding:24px;background:rgba(5,8,8,.58);border:1px solid rgba(180,220,180,.16);box-shadow:0 0 30px rgba(0,0,0,.5);z-index:20;}
+.menu{position:absolute;left:80px;
+bottom:130px;width:290px;padding:24px;background:rgba(5,8,8,.58);border:1px solid rgba(180,220,180,.16);box-shadow:0 0 30px rgba(0,0,0,.5);z-index:20;}
 .menu h1{font-size:46px;font-weight:300;letter-spacing:4px;color:#f1f1ea;margin-bottom:8px;}
 .sub{color:#92a392;font-size:13px;margin-bottom:28px;letter-spacing:2px;}
 nav{display:flex;flex-direction:column;gap:12px;}
