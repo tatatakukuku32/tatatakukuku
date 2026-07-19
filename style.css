@@ -190,23 +190,18 @@ opacity:.27;
 
     position:absolute;
 
-    left:90px;
+    left:55px;
+    bottom:55px;
 
-    bottom:70px;
+    width:270px;
 
-    width:330px;
+    padding:25px;
 
-    padding:28px;
+    background:rgba(8,12,10,.58);
 
-    background:
+    border:1px solid rgba(180,220,180,.15);
 
-    rgba(0,0,0,.22);
-
-    backdrop-filter:blur(4px);
-
-    border:
-
-    1px solid rgba(255,255,255,.08);
+    box-shadow:0 0 30px rgba(0,0,0,.45);
 
     z-index:20;
 
