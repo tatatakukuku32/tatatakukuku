@@ -34,11 +34,17 @@ html,body{
 
 .background{
 
+    .background{
+
     position:fixed;
 
     inset:0;
 
-    background-image:url("images/shrine.jpg");
+    background:red !important;
+
+    background-image:none !important;
+
+}
 
     background-size:cover;
 
