@@ -1,25 +1,95 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko">
+
+<head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>작은방</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>비오는 작은방</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<div class="scan"></div>
+
+<!-- 배경 -->
+
+<div class="background"></div>
+
+<!-- 비 -->
+
 <canvas id="rain"></canvas>
-<main class="panel">
-<h1>작은방</h1>
-<p>비 오는  작은 공간</p>
-<nav><a href="gallery.html">그림</a>
-｜
+
+<!-- 안개 -->
+
+<div class="fog fog1"></div>
+<div class="fog fog2"></div>
+
+<!-- CRT -->
+
+<div class="crt"></div>
+
+<!-- 메뉴 -->
+
+<div class="menu">
+
+<h1>비오는 작은방</h1>
+
+<p class="sub">
+
+조용한 밤의 기록
+
+</p>
+
+<nav>
+
+<a href="gallery.html">그림</a>
+
 <a href="#">일기</a>
-｜
-<a href="#">소개</a></nav>
-<button id="play">🎵 재생</button>
+
+<a href="#">소개</a>
+
+<a href="#">링크</a>
+
+</nav>
+
+<div class="music">
+
+<button id="play">
+
+♪ BGM
+
+</button>
+
 <audio id="bgm" loop>
+
 <source src="assets/rain.mp3" type="audio/mpeg">
+
 </audio>
-</main>
+
+</div>
+
+<div class="footer">
+
+<div id="clock"></div>
+
+<div>
+
+Last Update
+
+2026.07.19
+
+</div>
+
+</div>
+
+</div>
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
+
+</html>
