@@ -93,3 +93,31 @@ max-width:90%;
 max-height:90%;
 border-radius:12px;
 }
+.diary{
+margin-top:50px;
+display:flex;
+flex-direction:column;
+gap:28px;
+}
+
+.post{
+padding:28px;
+border:2px solid #111;
+border-radius:18px;
+transition:.2s;
+}
+
+.post:hover{
+transform:translateY(-3px);
+}
+
+.post h2{
+margin:0 0 12px;
+font-size:22px;
+}
+
+.preview{
+margin:0;
+line-height:1.8;
+opacity:.8;
+}
